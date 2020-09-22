@@ -22,8 +22,10 @@
                     <h1 class="title">Web sitemiz bitmek üzere</h1>
                     <div class="text-container">
                         <p class="text">Projeleriniz için beklemenize gerek yok, bize hemen ulaşmak için </p>
-                        <p class="text"> <span class="btnp">butona<img src="./assets/hand.svg" alt="Hand" class="hand"></span> tıklamanız ve açılan pencereye bilgilerinizi girmeniz yeterli.</p>
-                        
+                        <p class="text"> <span class="btnp">butona<img src="./assets/hand.svg" alt="Hand"
+                                    class="hand"></span> tıklamanız ve açılan pencereye bilgilerinizi girmeniz yeterli.
+                        </p>
+
                     </div>
                     <button @click="formState=true" class="contact-us-btn btn">Bize ulaşın</button>
                 </div>
@@ -32,16 +34,17 @@
                     <form class="contact-form">
                         <label class="form-label" for="name">Ad Soyad</label>
                         <input v-model="form.name" type="text" id="name" name="name" placeholder="Adınız">
-             
+
                         <label class="form-label" for="phone">Telefon</label>
                         <input v-model="form.phone" type="tel" id="phone" name="phone" placeholder="Telefon">
                         <label class="form-label" for="email">Email</label>
                         <input v-model="form.email" type="email" id="email" name="email" placeholder="Email">
-                    
+
                         <label class="form-label" for="message">Mesajınız</label>
-                        <textarea v-model="form.message" name="message" id="message" cols="30" rows="8" placeholder="Mesajınız."></textarea>
-                      </form>
-                      <button @click(sendForm) class="btn">Gönder</button>
+                        <textarea v-model="form.message" name="message" id="message" cols="30" rows="8"
+                            placeholder="Mesajınız."></textarea>
+                    </form>
+                    <button @click="sendForm" class="btn">Gönder</button>
                 </div>
             </div>
             <div class="illustration">

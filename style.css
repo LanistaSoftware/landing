@@ -74,8 +74,8 @@ body {
 
 .team-i {
     margin-top: 40px;
-    width: 80%;
-    max-width: 768px;
+    width: 70%;
+    max-width: 640px;
     height: auto;
 }
 
@@ -96,8 +96,8 @@ body {
 
 .contact-us-btn {
     margin-top: 30px;
-    width: 250px;
-    height: 75px;
+    width: 200px;
+    height: 50px;
 }
 
 .close_btn {

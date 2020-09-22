@@ -1,3 +1,5 @@
+
+
 var app = new Vue({
     el: '#app',
     data: {
@@ -11,9 +13,12 @@ var app = new Vue({
       }
     },
     methods: {
-      sendForm() {
+      sendForm: function() {
         console.log(this.form)
       }
     }
 
   })
+
+
+  
