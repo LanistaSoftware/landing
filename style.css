@@ -7,9 +7,11 @@
     font-family: 'Open Sans', sans-serif;
     outline: none !important;
 }
+html {
+    font-size: 10px;
 
+}
 body {
-    font-size: 16px;
     background-color: #3B4252;
 
 }
@@ -40,24 +42,24 @@ body {
 }
 
 .content .logo {
-    margin-top: 50px;
-    max-width: 90px;
+    margin-top: 5rem;
+    max-width: 9rem;
     height: auto;
 }
 
 .content-card .title {
-    margin-top: 60px;
-    font-size: 35px;
+    margin-top: 4rem;
+    font-size: 3rem;
     font-weight: 400;
     color: white;
 }
 
 .text-container {
-    margin-top: 30px;
+    margin-top: 3rem;
 }
 
 .text-container p {
-    font-size: 17px;
+    font-size: 1.2rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.4);
 }
@@ -73,9 +75,9 @@ body {
 }
 
 .team-i {
-    margin-top: 40px;
+    margin-top: 4rem;
     width: 70%;
-    max-width: 640px;
+    max-width: 40rem;
     height: auto;
 }
 
@@ -83,9 +85,9 @@ body {
     background-color: #E9515E;
     color: white;
     border-radius: 5px;
-    font-size: 17px;
+    font-size: 1.2rem;
     cursor: pointer;
-    padding: 15px 20px;
+    padding: 1.2rem 2rem;
     border: none;
     transition: 0.5s ease-out;
 }
@@ -95,14 +97,14 @@ body {
 }
 
 .contact-us-btn {
-    margin-top: 30px;
-    width: 200px;
-    height: 50px;
+    margin-top: 3rem;
+    width: 15rem;
+    height: 5rem;
 }
 
 .close_btn {
     color: #E9515E;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 700;
     cursor: pointer;
     border: none;
@@ -111,25 +113,21 @@ body {
 }
 
 .footer {
-    padding: 0 30px;
+    padding-top: 3rem;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     color: white;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
 .footer i {
-    margin-right: 10px;
+    margin-right: 1rem;
 }
-
-.footer-center {
+.footer span{
+    display: block;
     text-align: center;
-}
-
-.footer-right {
-    text-align: right;
+    padding: 1rem;
 }
 
 [class^="flaticon-"]:before,
@@ -156,16 +154,16 @@ form {
     color: white;
 }
 
-form-card 
-input[type=text],
+form-card input[type=text],
 input[type=tel],
 input[type=email],
 input,
 textarea {
     width: 100%;
-    padding: 12px 20px;
-    margin-top: 8px;
-    margin-bottom: 20px;
+    font-size: 1.1rem;
+    padding: 0.8rem 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1.2rem;
     display: inline-block;
     border-radius: 4px;
     box-sizing: border-box;
@@ -176,17 +174,18 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-    color: white;
+    color: #3B4252;
+    font-size: 0.8rem;
 }
 
 .form-card {
     position: absolute;
     top: 10%;
-    left: calc(50% - 225px);
-    width: 450px;
+    left: calc(50% - 15rem);
+    width: 30rem;
     border-radius: 5px;
     background-color: #3B4252;
-    padding: 20px;
+    padding: 2rem;
     border: thin solid #E9515E;
     text-align: right;
 }
@@ -196,5 +195,55 @@ textarea::placeholder {
 }
 
 .form-label {
-    margin: 20px 20px;
+    margin: 2rem 2rem;
 }
+.errorlist, .errormsg {
+list-style: none;
+text-decoration: none;
+}
+.errorlist {
+    width: 100%;
+    color:#E9515E;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 576px) { 
+    html {
+        font-size: 12px;
+    }
+ }
+
+@media (min-width: 768px) { 
+    html {
+        font-size: 13px;
+    }
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .footer span{
+        display: initial;
+        text-align: initial;
+        padding: none;
+    }
+    
+    .footer-center {
+        text-align: center !important;
+    }
+    
+    .footer-right {
+        text-align: right !important;
+    }
+ }
+
+@media (min-width: 992px) { 
+    html {
+        font-size: 14px;
+    }
+ }
+
+@media (min-width: 1200px) { 
+    html {
+        font-size: 15px;
+    }
+ }
