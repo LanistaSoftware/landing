@@ -38,7 +38,8 @@
                         <input v-model="form.name" type="text" id="name" name="name" placeholder="Adınız">
 
                         <label class="form-label" for="phone">Telefon</label>
-                        <input v-model="form.phone" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id="phone" name="phone" placeholder="Telefon">
+                        <input v-model="form.phone" type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" id="phone"
+                            name="phone" placeholder="Telefon">
                         <label class="form-label" for="email">Email</label>
                         <input v-model="form.email" type="email" id="email" name="email" placeholder="Email">
 
@@ -48,6 +49,7 @@
                     </form>
                     <ul class="errorlist">
                         <li v-for="err in errors" :key="err" class="errormsg">{{ err }}</li>
+                        <li v-for="send in sendMessage" :key="send" class="send-message">{{ send }}</li>
                     </ul>
                     <button @click="sendForm" class="btn">Gönder</button>
                 </div>
@@ -58,20 +60,34 @@
             </div>
             <div class="footer">
                 <span class="footer-left">
-                    <i class="flaticon-email" class="mail"></i>
-                    bilgi@lanista.com.tr
+                    <a href="mailto:bilgi@lanista.com.tr">
+                        <i class="flaticon-email" class="mail"></i>
+                        bilgi@lanista.com.tr
+                    </a>
                 </span>
                 <span class="footer-center">
-                    <i class="flaticon-placeholder" class="mail"></i>
-                    Teknokent, Van-Türkiye
+                    <a href="">
+                        <i class="flaticon-placeholder" class="mail"></i>
+                        Teknokent, Van-Türkiye
+                    </a>
                 </span>
                 <span class="footer-right">
-                    <i class="flaticon-phone-call" class="mail"></i>
-                    0 432 502 85 00
+                    <a href="tel:04325028500">
+                        <i class="flaticon-phone-call" class="mail"></i>
+                        0 432 502 85 00
+                    </a>
                 </span>
             </div>
         </div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+  
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
     <script src="main.js"></script>
 </body>
 

@@ -9,6 +9,7 @@
 }
 a {
     text-decoration: none;
+    color: white;
 }
 html {
     font-size: 10px;
@@ -34,7 +35,7 @@ body {
 .bg {
     position: absolute;
     width: 100%;
-    top: 10%;
+    top: 12%;
     z-index: -1;
     opacity: 0.1;
 }
@@ -208,6 +209,10 @@ text-decoration: none;
     text-align: left;
     font-size: 0.9rem;
 }
+.send-message {
+    color:green;
+    font-size: 0.9rem;
+}
 
 @media (min-width: 576px) { 
     html {
@@ -234,6 +239,9 @@ text-decoration: none;
     
     .footer-right {
         text-align: right !important;
+    }
+    .bg {
+        top: 15%;
     }
  }
 
